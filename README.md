@@ -26,7 +26,7 @@ push to docker and run from uploaded image :
 ```
 docker tag test-node-container marshyon/test-node-container
 docker push marshyon/test-node-container
-docker run -p 9090:8080 -d --rm marshyon/test-node-container -name test-node
+docker run -p 9090:8080 -d --name test-node --rm marshyon/test-node-container
 ...
 # to stop and remove (because --rm was used to auto remove) running container ...
 docker stop test-node 
